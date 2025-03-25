@@ -1,20 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2;
-
-    // Input two numbers from user
-    printf("Enter two numbers: ");
-    scanf("%d %d", &num1, &num2);
-
-    // If num1 is greater than num2
-    if(num1 > num2) {
-        printf("%d is maximum", num1);
-    } else {
-        // If num2 is greater than or equal to num1
-        printf("%d is maximum", num2);
-    }
-
+    int num1, num2, sum; // Declare variables to store the numbers and their sum
+    printf("Enter the first number: ");
+    scanf("%d", &num1); // Read the first number from the user
+    printf("Enter the second number: ");
+    scanf("%d", &num2); // Read the second number from the user
+    sum = num1 + num2; // Add the two numbers
+    printf("Sum of %d and %d is: %d", num1, num2, sum); // Display the sum
     return 0;
 }
 
